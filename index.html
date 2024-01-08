@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b2e0a616b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Greetings, I'm <br /><span>Siphesihle</span> Mazibuko</h1>
+        </div>
+      </div>
+    </div>
+    <!-----About me Section ------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/portrait.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I'm Siphesihle Mazibuko, an ambitious and enthusiastic developer
+              with a strong determination to break free from the status quo and
+              establish a notable presence in the tech industry. I blend my work
+              ethic and creative thinking to navigate the intricate world of
+              code, and I possess a deep interest and talent for
+              problem-solving. My passion for technology is the driving force
+              behind my actions, and I see obstacles as opportunities to learn
+              and grow, continually honing my skills in various programming
+              languages while staying abreast of the latest advancements.
+              Transforming ideas into practical, user-centered solutions is
+              where I thrive, and my meticulous attention to detail underscores
+              my commitment to delivering high-quality work. Beyond being just a
+              developer, I consider myself a visionary, eager to make a
+              significant difference and contribute meaningfully to the swiftly
+              evolving field of technology
+            </p>
+            <div class="tabs">
+              <p class="tablink activelink" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tablink" onclick="opentab('education')">Education</p>
+              <p class="tablink" onclick="opentab('projects')">Projects</p>
+            </div>
+            <div class="tabContent activeTab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML</span><br />
+                  Website development
+                </li>
+                <li><span>CSS</span><br />Styling of Websites</li>
+                <li><span>Javascript</span><br />Functionality of websites</li>
+                <li><span>Python</span><br /></li>
+                <li><span>ReactJs</span><br />Web Development</li>
+                <li>
+                  <span>React Native</span><br />Building Mobile Applications
+                  IOS & Android
+                </li>
+                <li>
+                  <span>Firebase</span><br />Connecting mobile application to
+                  the database
+                </li>
+                <li><span>PHP</span><br />Connecting website to database</li>
+                <li><span>SQL</span><br />Creating Databases</li>
+                <li><span>C#</span></li>
+              </ul>
+            </div>
+            <div class="tabContent" id="education">
+              <ul>
+                <li>
+                  <span>2022-2024 University of Johannesburg</span><br />
+                  Diploma in Business Information Technology
+                </li>
+                <li>
+                  <span>2021 Rosebank College</span><br />Higher Certificate in
+                  Information Technology in Support Systems
+                </li>
+                <li><span>2020 Nirvana Secondary School</span><br />Martic</li>
+              </ul>
+            </div>
+            <div class="tabContent" id="projects">
+              <ul>
+                <li>
+                  <span>Thrive Mentor</span><br />
+                  A website that helps individuals suffering with any mental
+                  issues or that need someone to talk to, but don't want to
+                  speak to a person, so this helps them with booking an online
+                  session and have online meetups
+                  <br />
+                  <a href="https://github.com/SiphesihleMazibuko/ThriveMentor"
+                    >Thrive Mentor</a
+                  >
+                </li>
+                <li>
+                  <span>Eco Tracker</span><br />A mobile application created to
+                  assist people by giving them knowledge on how to take care of
+                  the environment<br />
+                  <a href="https://github.com/SiphesihleMazibuko/Eco-Tracker2.0"
+                    >Eco Tracker</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------Services---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Thrive Mentor</h2>
+            <p>
+              A website that helps individuals suffering with any mental issues
+              or that need someone to talk to, but don't want to speak to a
+              person, so this helps them with booking an online session and have
+              online meetups
+            </p>
+            <a href="https://github.com/SiphesihleMazibuko/ThriveMentor"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>Eco Tracker</h2>
+            <p>
+              A mobile application created to assist people by giving them
+              knowledge on how to take care of the environment
+            </p>
+            <a href="https://github.com/SiphesihleMazibuko/Eco-Tracker2.0"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------Contact Me Section--------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>amazibuko763@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0683480042</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/siphesihle-mazibuko-405799252/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/s.chiko_/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/SiphesihleMazibuko"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="images/Resume of Siphesihle Mazibuko .pdf"
+              download
+              class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" placeholder="Your Name" name="Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Siphesihle Mazibuko.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tablink");
+      var tabcontents = document.getElementsByClassName("tabContent");
+      var sideMenu = document.getElementById("sidemenu");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("activelink");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activeTab");
+      }
+
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzitrhrZknsw8APEjYQk0Bkpb2oHneUYiKY14qMt9PW6k_hegHzWHPf-E7Ln_ISzKukhg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function () {
+              msg.innerHTML = ""
+            },2000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
